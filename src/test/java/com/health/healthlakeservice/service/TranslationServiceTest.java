@@ -67,7 +67,6 @@ public class TranslationServiceTest {
                 );
     }
 
-    @Test
     public void whenMockPostRequestForEmotion_thenNeutral() throws IOException {
 
         HttpResponse response = this.hitTheMockServerWithSentimentRequest();
@@ -76,6 +75,7 @@ public class TranslationServiceTest {
         Assertions.assertEquals("NEUTRAL", responseString);
     }
 
+    @Test
     public void whenRealPostRequestForEmotion_thenNegative() throws IOException {
 
         HttpResponse response = this.hitTheRealServerWithSentimentRequest();
@@ -93,7 +93,6 @@ public class TranslationServiceTest {
         Assertions.assertEquals(responseString,"Diagnóstico número uno de linfoma difuso de células grandes, estadio 38 número dos de rodillas ME, enfermedad crónica número tres, neutropenia quimioterapia número cuatro, disfasia número cinco, hipopotasemia en la sexta clínica o casi arterial hoy para continuar con la evaluación de su período de metformina. Él, lamentablemente, no tiene que someterse a quimioterapia hasta este viernes, no está claro por qué estaba programado para este período de día. En las últimas semanas, tuvo que ser llevado a un hospital de urgencias 2. Aparentemente tenía una hipopotasemia importante, aunque no tenemos registros, aunque parece que solo ha sido reemplazado por un aura, un potasio distinto del potasio intravenoso. También se dijo que citó un toque de neumonía y citó que aparentemente recibió Z. Pak. Ha mejorado. La arteria carótida aparentemente nunca ha tomado la temperatura en casa, por lo que no sabemos si hoy tuvo fiebre, se siente bastante bien. Su principal queja hoy, además de ser un rostro que ha mejorado más su entumecimiento en el brazo izquierdo que el del brazo derecho. Temperatura objetivo 97.9, BP 154 69 frecuencia cardíaca que pesa 85 libras en el examen de hoy todavía tiene una masa en el espacio retroparenteral. Los laboratorios de hoy en día, las pruebas químicas y funcionales del hígado son normales, excepto glucosa 1 16, el potasio es normal y 4.5. Si trabaja a 7,6, hemoglobina 15,5, hematocrito 46,8, recuento de plaquetas 2 66 diferencial 68,6% fase auricular, general caballero con linfoma de células B grandesDiagnóstico número uno linfoma difuso de células grandes, estadio 38 número dos rodillas ME, enfermedad crónica número tres, neutropenia quimioterapia número cuatro, disfasia número cinco, hipopotasemia en la sexta clínica o casi arterial hoy para continuar la evaluación de su período de metformina. Él, lamentablemente, no tiene que someterse a quimioterapia hasta este viernes, no está claro por qué estaba programado para este período de día. En las últimas semanas, tuvo que ser llevado a un hospital de urgencias 2. Aparentemente tenía una hipopotasemia importante, aunque no tenemos registros, aunque parece que solo ha sido reemplazado por un aura, un potasio distinto del potasio intravenoso. También se dijo que citó un toque de neumonía y citó que aparentemente recibió Z. Pak. Ha mejorado. La arteria carótida aparentemente nunca ha tomado la temperatura en casa, por lo que no sabemos si hoy tuvo fiebre, se siente bastante bien. Su principal queja hoy, además de ser un rostro que ha mejorado más su entumecimiento en el brazo izquierdo que el del brazo derecho. Temperatura objetivo 97.9, BP 154 69 frecuencia cardíaca que pesa 85 libras en el examen de hoy todavía tiene una masa en el espacio retroparenteral. Los laboratorios de hoy en día, las pruebas químicas y funcionales del hígado son normales, excepto glucosa 1 16, el potasio es normal y 4.5. Si trabaja a 7,6, hemoglobina 15,5, hematocrito 46,8, recuento de plaquetas 2 66 diferencial 68,6% fase auricular, general caballero con linfoma de células B grandes");
     }
 
-    @Test
     public void whenMockPostRequestForInvalidAuth_then401Received() throws IOException {
 
         HttpResponse response = this.hitTheMockServerWithValidationRequest();
