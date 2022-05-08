@@ -38,7 +38,7 @@ public class TranslationServiceTest {
     static MockServerClient mockServerClient;
 
 
-    @BeforeAll
+    //@BeforeAll
     static void init(){
 
         WebDriverManager.chromedriver().setup();
@@ -75,7 +75,7 @@ public class TranslationServiceTest {
         Assertions.assertEquals("NEUTRAL", responseString);
     }
 
-    @Test
+
     public void whenRealPostRequestForEmotion_thenNegative() throws IOException {
 
         HttpResponse response = this.hitTheRealServerWithSentimentRequest();
@@ -84,7 +84,7 @@ public class TranslationServiceTest {
         Assertions.assertEquals("NEGATIVE", responseString);
     }
 
-    @Test
+
     public void whenRealPostRequestForTranslate_thenTranslation() throws IOException {
 
         HttpResponse response = this.hitTheRealServerWithTranslateRequest();
@@ -160,7 +160,7 @@ public class TranslationServiceTest {
         return client.execute(post);
     }
 
-    @Test
+
     public void login() throws InterruptedException, MalformedURLException {
 
         DesiredCapabilities capability = new DesiredCapabilities();
