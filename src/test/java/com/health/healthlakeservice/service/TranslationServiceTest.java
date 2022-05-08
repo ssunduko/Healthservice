@@ -42,7 +42,7 @@ public class TranslationServiceTest {
     static void init(){
 
         WebDriverManager.chromedriver().setup();
-        mockServerClient = new MockServerClient("54.208.12.49", 1080);
+        mockServerClient = new MockServerClient("54.160.224.178", 1080);
 
         mockServerClient.when(
                         request()
@@ -102,7 +102,7 @@ public class TranslationServiceTest {
 
     private HttpResponse hitTheMockServerWithValidationRequest() throws IOException {
 
-        String url = "http://54.208.12.49:1080/validate";
+        String url = "http://54.160.224.178:1080/validate";
         CloseableHttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-type", "application/json");
@@ -117,7 +117,7 @@ public class TranslationServiceTest {
 
     private HttpResponse hitTheMockServerWithSentimentRequest() throws IOException {
 
-        String url = "http://54.208.12.49:1080/emotionalize";
+        String url = "http://54.160.224.178:1080/emotionalize";
         CloseableHttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-type", "text/plain");
@@ -171,7 +171,7 @@ public class TranslationServiceTest {
         options.addArguments("--lang=en");
         options.merge(capability);
 
-        WebDriver driver = new RemoteWebDriver(new URL("http://54.208.12.49:4444/wd/hub"), capability);
+        WebDriver driver = new RemoteWebDriver(new URL("http://54.160.224.178:4444/wd/hub"), capability);
         driver.get("https://capstone.onestepprojects.org/fund");
         driver.manage().window().setSize(new Dimension(1294, 774));
         driver.findElement(By.cssSelector(".login-button")).click();
