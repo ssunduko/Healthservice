@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "aws.dynamodb.endpoint",
+      "type": "java.lang.String",
+      "description": "Description for aws.dynamodb.endpoint."
+    },
+    {
+      "name": "aws.healthlake.endpoint",
+      "type": "java.lang.String",
+      "description": "Description for aws.healthlake.endpoint."
+    },
+    {
+      "name": "aws.region",
+      "type": "java.lang.String",
+      "description": "Description for aws.region."
+    },
+    {
+      "name": "aws.service.name",
+      "type": "java.lang.String",
+      "description": "Description for aws.service.name."
+    },
+    {
+      "name": "aws.dynamodb.accessKey",
+      "type": "java.lang.String",
+      "description": "Description for aws.dynamodb.accessKey."
+    },
+    {
+      "name": "aws.healthlake.datastore",
+      "type": "java.lang.String",
+      "description": "Description for aws.healthlake.datastore."
+    }
+  ] }

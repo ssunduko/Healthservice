@@ -1,0 +1,20 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: Health-Service-Cluster
+  region: us-east-1
+
+vpc:
+  id: vpc-870dddfd
+  cidr: "172.31.0.0/16"
+  subnets:
+    public:
+      my-new-stack-PublicSubnet01:
+        id: subnet-bf1c9f91
+      my-new-stack-PublicSubnet02:
+        id: subnet-5be1b511
+
+nodeGroups:
+  - name: EKS-public-workers
+    instanceType: t2.micro
+    desiredCapacity: 2
