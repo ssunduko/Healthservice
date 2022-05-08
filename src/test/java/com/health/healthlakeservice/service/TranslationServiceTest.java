@@ -42,7 +42,7 @@ public class TranslationServiceTest {
     static void init(){
 
         WebDriverManager.chromedriver().setup();
-        mockServerClient = new MockServerClient("54.160.224.178", 1080);
+        /*mockServerClient = new MockServerClient("54.160.224.178", 1080);
 
         mockServerClient.when(
                         request()
@@ -64,7 +64,7 @@ public class TranslationServiceTest {
                 .respond(
                         response()
                                 .withBody("NEUTRAL")
-                );
+                );*/
     }
 
     public void whenMockPostRequestForEmotion_thenNeutral() throws IOException {
