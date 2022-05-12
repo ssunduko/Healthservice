@@ -11,6 +11,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 /**
  * AWS Health Lake configuration
+ *
+ * This was adapted from a post "INTRODUCTION TO HAPI FHIR"
+ * by Youri Vermeir
+ * https://ordina-jworks.github.io/ehealth/2021/02/23/hapi-fhir.html
  */
 public class HealthLakeConfiguration {
 

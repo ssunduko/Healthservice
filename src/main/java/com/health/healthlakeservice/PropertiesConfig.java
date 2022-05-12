@@ -28,6 +28,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @Configuration
 /**
  * Property configuration
+ *
+ *  This was adapted from a post "Spring Events"
+ *  by Eugen Paraschiv
+ *  https://www.baeldung.com/spring-events
  */
 public class PropertiesConfig implements ApplicationListener<ApplicationPreparedEvent> {
 
