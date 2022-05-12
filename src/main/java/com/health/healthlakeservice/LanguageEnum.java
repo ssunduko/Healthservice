@@ -7,14 +7,15 @@ import lombok.Getter;
  * List of all supported languages
  */
 public enum LanguageEnum {
+
+    GERMAN("de"),
+    PORTUGUESE("pt"),
+    SPANISH("es"),
     ARABIC("ar"),
     CHINESE("zh"),
     ENGLISH("en"),
     RUSSIAN("ru"),
-    FRENCH("fr"),
-    GERMAN("de"),
-    PORTUGUESE("pt"),
-    SPANISH("es");
+    FRENCH("fr");
 
     private final String langCode;
 

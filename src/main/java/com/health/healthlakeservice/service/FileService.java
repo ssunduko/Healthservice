@@ -16,6 +16,10 @@ import java.util.List;
 @Service
 /**
  * File Upload Service for that kicks of AWS Transcribe
+ *
+ *  This was adapted from a post "Spring Boot + AWS S3 Upload File"
+ *  by Tech Geek
+ *  https://www.techgeeknext.com/cloud/aws/amazon-s3-springboot-upload-file-in-s3-bucket
  */
 public class FileService {
 

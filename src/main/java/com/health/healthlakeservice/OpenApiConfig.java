@@ -22,6 +22,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 /**
  * Open API configuration
+ *
+ *  This was adapted from a post "OpenAPI Security#Video"
+ *  by Cloud-Native AppDev
+ *  https://appdev.consulting.redhat.com/tracks/contract-first/security-with-openapi.html#video
  */
 public class OpenApiConfig {
 }

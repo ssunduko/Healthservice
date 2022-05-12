@@ -14,6 +14,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 /**
  * Security configuration
+ *
+ *  This was adapted from a post "Introduction to Java Config for Spring Security"
+ *  by baelgung
+ *  https://www.baeldung.com/java-config-spring-security
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 

@@ -19,6 +19,10 @@ import java.util.List;
 @SecurityRequirement(name = "capstone")
 /**
  * NLP File Upload Service Controller
+ *
+ *  This was adapted from a post "Spring Boot + AWS S3 Upload File"
+ *  by Tech Geek
+ *  https://www.techgeeknext.com/cloud/aws/amazon-s3-springboot-upload-file-in-s3-bucket
  */
 public class FileManager {
 

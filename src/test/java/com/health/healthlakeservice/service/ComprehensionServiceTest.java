@@ -33,10 +33,9 @@ import static org.mockserver.model.HttpResponse.response;
 /**
  *
  */
-public class TranslationServiceTest {
+public class ComprehensionServiceTest {
 
     static MockServerClient mockServerClient;
-
 
     @BeforeAll
     static void init(){
